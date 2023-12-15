@@ -1,13 +1,9 @@
-
 import MainPage from './campus/MainPage/MainPage';
 function App() {
 
   return (
 
     <div>
-      
-
-
       <MainPage/>
       
       </div>
@@ -15,4 +11,3 @@ function App() {
   );
 }
 export default App;
-

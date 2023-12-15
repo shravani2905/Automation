@@ -1,7 +1,5 @@
-
-import "./Item.css";
-
-function Item(prop) {
+import "./Item1.css";
+function Item1(prop) {
   // State to track whether the item is added to the cart
 
   return (
@@ -17,14 +15,11 @@ function Item(prop) {
           <span className="Heading">Rating:</span>
           {prop.appData.rating.rate}
           <div>
-            <button
-              className="btn cart btn-primary display-5"
-            >Add to Cart
-            </button>
+        
           </div>
         </p>
       </div>
     </div>
   );
 }
-export default Item;
+export default Item1;

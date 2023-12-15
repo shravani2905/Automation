@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./StudentLogin.css";
+import "./FacultyLogin.css";
 import { Link } from "react-router-dom";
 
-function StudentLogin() {
+function FacultyLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -14,29 +14,25 @@ function StudentLogin() {
       setError("Both username and password are required.");
       return;
     }
+
     // Both username and password are provided, perform login logic
     console.log("Username:", username);
     console.log("Password:", password);
     setError("");
     // You can navigate or perform any other action upon successful login
   };
-// ... (existing code)
-
-const isSubmitDisabled = !(
-  (username === "22071A0553" && password === "abc") ||
-  (username === "22071A0555" && password === "bcd") ||
-  (username === "22071A0522" && password === "cde")
-);
-
-// ... (existing code)
-
+  const isSubmitDisabled = !(
+    (username === "faculty" && password === "abc") ||
+    (username === "22071A0555" && password === "bcd") ||
+    (username === "22071A0522" && password === "cde")
+  );
   return (
     <div className="login-container">
       <div className="login-form">
-        <h1 className="login">Student Login</h1>
+        <h1 className="login">Faculty Login</h1>
         <form onSubmit={handleLogin}>
           <div className="input-group">
-            <label htmlFor="username">RollNo:</label>
+            <label htmlFor="username">Faculty ID</label>
             <input
               type="text"
               id="username"
@@ -76,4 +72,4 @@ const isSubmitDisabled = !(
   );
 }
 
-export default StudentLogin;
+export default FacultyLogin;

@@ -1,7 +1,6 @@
-import Item from "../Item/Item"
-import "./Productsimg.css"
-import { Link } from "react-router-dom";
-function Productsimg(){
+
+import Item1 from "../Item1/Item1"
+function AdminUpload(){
     let appData = [
         {
           id: 1,
@@ -104,50 +103,33 @@ function Productsimg(){
     
 return(
   <div>
-  <div class="navbar">
-<img src="https://png.pngtree.com/element_our/png_detail/20181227/users-vector-icon-png_295010.jpg" width="50px" alt=""  />
-<h3 className=" heading">Online stationary</h3>
-<div class="search">
-<input
-          placeholder="Search Products"
-          type="text"
-       
-        />
-            </div>
-<ul class="List">
-    <li><button className="btn button">Home</button></li>
-    <Link to="/print"><li><button className="btn button">PRINT</button></li></Link>
-    <Link to="/cart"><li><button className="btn button">CART</button></li></Link>
-    <li><button className="btn button">Logout</button></li>
-</ul>
-</div>
 <div className="container">
 <div className="row1">
     <div className="col-3">
-<Item appData={appData[0]}/>
+<Item1 appData={appData[0]}/>
     </div>
     <div className="col-3">
-    <Item appData={appData[1]}/>
+    <Item1 appData={appData[1]}/>
     </div>
     <div className="col-3">
-    <Item appData={appData[2]}/>
+    <Item1 appData={appData[2]}/>
     </div>
     <div className="col-3 ">
-    <Item appData={appData[3]}/>
+    <Item1 appData={appData[3]}/>
     </div>
 </div>
 <div className="row2">
 <div className="col-3 ">
-    <Item appData={appData[4]}/>
+    <Item1 appData={appData[4]}/>
     </div>
     <div className="col-3 ">
-    <Item appData={appData[5]}/>
+    <Item1 appData={appData[5]}/>
     </div>
     <div className="col-3 ">
-    <Item appData={appData[6]}/>
+    <Item1 appData={appData[6]}/>
     </div>
     <div className="col-3 ">
-    <Item appData={appData[7]}/>
+    <Item1 appData={appData[7]}/>
     </div>
 
 </div>
@@ -155,4 +137,4 @@ return(
 </div>
 )
 }
-export default Productsimg;
+export default AdminUpload

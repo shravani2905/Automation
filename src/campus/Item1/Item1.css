@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.info {
+  color: blue;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.head {
+  height: 300px;
+  width: 250px;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 2px 2px 2px rgb(177, 177, 255);
+  margin-top:100px;
+}
+.Heading {
+  color: rgb(255, 91, 105);
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1.2px;
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .head {
+    height: 200px;
+    width: 200px;
+  }
+  .info {
+    padding: 2px;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .head {
+    height: 150px;
+    width: 150px;
+  }
+  .info {
+    padding: 1px;
+  }
+  p {
+    font-size: 0.4rem;
+  }
+}
+
+.cart{
+    background-color: rgb(6, 123, 6);
+    margin-top:10px;
+}
+

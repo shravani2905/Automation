@@ -7,13 +7,16 @@ import StudentPage from "./campus/StudentPage/StudentPage"
 import AdminPage from "./campus/AdminPage/AdminPage"
 import AdminLogin from "./campus/AdminLogin/AdminLogin"
 import StudentLogin from "./campus/StudentLogin/StudentLogin"
+import Cart from "./campus/Cart/Cart"
 import Print from "./campus/Print/Print"
 import reportWebVitals from './reportWebVitals';
 import Studentsignup from "./campus/Studentsignup/Studentsignup"
+import FacultyLogin from './campus/Facultylogin/FacultyLogin';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import AdminUpload from './campus/AdminUpload/AdminUpload';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,14 @@ const router = createBrowserRouter([
     element:<Print/>,
   },
   {
+    path: "/facultylogin",
+    element:<FacultyLogin/>,
+  },
+  {
+    path: "/cart",
+    element:<Cart/>,
+  },
+  {
     path: "/adminlogin",
     element:<AdminLogin/>,
   },
@@ -36,6 +47,11 @@ const router = createBrowserRouter([
   {
     path: "/student",
     element:<StudentPage/>,
+  },
+  
+  {
+    path: "/adminupload",
+    element:<AdminUpload/>,
   },
   {
     path: "/studentsignup",
