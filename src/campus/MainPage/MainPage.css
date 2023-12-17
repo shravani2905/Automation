@@ -1,3 +1,12 @@
+.a{
+    /* background-image: url('https://e0.pxfuel.com/wallpapers/750/382/desktop-wallpaper-stationary-background-office-stationery.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    background-image: linear-gradient(to right,rgba(70, 70, 193, 0.504),rgb(222, 223, 227),rgba(70, 70, 193, 0.504));
+    font-family: 'Open Sans', sans-serif;
+
+}
 .student{
     text-decoration: none;
 }
